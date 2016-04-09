@@ -570,7 +570,7 @@
     // Tooltip content
     {
         "class": "tool_tip_label_control",
-        "color": [98, 114, 164],
+        "color": [248, 248, 242],
         "font.bold": false,
         "font.size": 12
     },
@@ -725,6 +725,12 @@
         "parents": [{"class": "tree_row","attributes": ["expandable"]}],
         "color": [98, 114, 164],
         "font.bold": false
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["expandable", "expanded"]}],
+        "color": [248, 248, 242],
+        "font.bold": true
     },
     {
         "class": "sidebar_label",
@@ -1091,21 +1097,21 @@
         "fg": [248, 248, 242],
         "selected_fg": [248, 248, 242],
         "match_fg": [139, 233, 253],
-        "selected_match_fg": [255, 121, 198]
+        "selected_match_fg": [139, 233, 253]
     },
     {
         "class": "quick_panel_path_label",
         "fg": [248, 248, 242],
         "selected_fg": [248, 248, 242],
         "match_fg": [139, 233, 253],
-        "selected_match_fg": [255, 121, 198]
+        "selected_match_fg": [139, 233, 253]
     },
     {
         "class": "quick_panel_score_label",
         "fg": [248, 248, 242],
         "selected_fg": [248, 248, 242],
         "match_fg": [139, 233, 253],
-        "selected_match_fg": [255, 121, 198]
+        "selected_match_fg": [139, 233, 253]
     },
 
 //========================================================
@@ -1127,7 +1133,7 @@
         "fg": [248, 248, 242],
         "selected_fg": [248, 248, 242],
         "match_fg": [139, 233, 253],
-        "selected_match_fg": [255, 121, 198]
+        "selected_match_fg": [139, 233, 253]
     },
     {
         "class": "table_row",
