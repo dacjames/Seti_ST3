@@ -8,13 +8,14 @@
         "layer0.opacity": 1,
         "tint_index": 0,
         "layer1.texture": "Seti_UI/Main/tabset_background.png",
+        "layer1.tint": [200, 176, 190],
         "layer1.inner_margin": [2, 6],
         "layer1.opacity": 1,
         "content_margin": [0,0,0,1],
         "tab_overlap": 17,
-        "tab_width": 190,
+        "tab_width": 180,
         "tab_min_width": 100,
-        "tab_height": 35,
+        "tab_height": 40,
         "mouse_wheel_switch": false
     },
     // options
@@ -32,23 +33,18 @@
     // Tab element
     {
         "class": "tab_control",
-        "layer0.texture": "Seti_UI/Main/tab_mask.png",
+        "layer0.texture": "Seti_UI/Main/tab_mask_dracula.png",
         "layer0.inner_margin": [22, 4],
         "layer0.opacity": 1,
-        "layer2.texture": "Seti_UI/Main/transparent_selected_tab_bg.png",
-        "layer2.inner_margin": [22, 4],
-        "layer2.opacity": 1,
-        "tint_index": 0,
-        "tint_modifier": [255, 255, 255],
-        "content_margin": [24, 8, 23, 4],
+        "tint_index": 1,
+        "content_margin": [24, 8, 23, 0],
         "max_margin_trim": 6,
         "hit_test_level": 0,
     },
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "tint_modifier": [0, 0, 0, 0],
-        "layer0.texture": "Seti_UI/Main/tab_mask_white.png",
+        "layer0.texture": "Seti_UI/Main/tab_mask_dracula_selected_med.png",
     },
 
 //========================================================
@@ -187,7 +183,7 @@
         "fade": true,
         "font.size": 11,
         "font.bold": false,
-        "fg": [248, 248, 242, 160]
+        "fg": [248, 248, 242, 180]
     },
     {
         "class": "tab_label",
@@ -197,7 +193,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [248, 248, 242, 200],
+        "fg": [248, 248, 242, 240],
         "font.bold": false
     },
     {
@@ -234,7 +230,7 @@
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected", "file_light"]}],
-        "fg": [29, 31, 41]
+        "fg": [248, 248, 242, 240]
     },
     {
         "class": "tab_label",
@@ -595,7 +591,7 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [189, 147, 249]
+        "color": [98, 114, 164]
     },
     // panel switcher
     {
@@ -667,18 +663,26 @@
     {
         "class": "tree_row",
         "layer0.texture": null,
-        "layer0.tint": [98, 114, 164],
+        "layer0.tint": [29, 31, 41],
         "layer0.opacity": { "target": 0.0, "speed": 50.0, "interpolation": "smoothstep" },
     },
     // Sidebar row selected
     {
         "class": "tree_row",
         "attributes": ["selected"],
+        "layer0.tint": [98, 114, 164],
         "layer0.opacity": { "target": 1.0, "speed": 50.0, "interpolation": "smoothstep" }
     },
     {
         "class": "tree_row",
         "attributes": ["hover"],
+        "layer0.tint": [68, 71, 90],
+        "layer0.opacity": { "target": 1.0, "speed": 50.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "tree_row",
+        "attributes": ["selected", "hover"],
+        "layer0.tint": [98, 114, 164],
         "layer0.opacity": { "target": 1.0, "speed": 50.0, "interpolation": "smoothstep" }
     },
     // Sidebar heading
@@ -705,7 +709,7 @@
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row","attributes": ["hover"]}],
-        "color": [248, 248, 242]
+        "color": [98, 114, 164]
     },
     // Sidebar files
     {
@@ -729,7 +733,7 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable", "expanded"]}],
-        "color": [248, 248, 242],
+        "color": [248, 248, 242, 240],
         "font.bold": true
     },
     {
@@ -742,6 +746,11 @@
         "class": "sidebar_label",
         "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
         "color": [248, 248, 242]
+    },
+    {
+        "class": "sidebar_label",
+        "parents": [{"class": "tree_row","attributes": ["expandable", "expanded", "hover"]}],
+        "font.bold": true
     },
 
     // Sidebar open files entry selected
@@ -1324,7 +1333,7 @@
         "parents": [{"class": "icon_button_control","attributes": ["hover"]}],
         "layer0.tint": [139, 233, 253]
     },
-    // Match whole word search button
+    // Match whole word search button```
     {
         "class": "icon_whole_word",
         "layer0.texture": "Seti_UI/Main/wholeword@2x.png",
@@ -1399,7 +1408,7 @@
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint":  [255, 85, 85]
+        "layer0.tint":  [248, 248, 242]
     },
     {
         "class": "icon_reverse",
@@ -1417,7 +1426,7 @@
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint":  [255, 85, 85]
+        "layer0.tint":  [248, 248, 242]
     },
     {
         "class": "icon_wrap",
@@ -1435,7 +1444,7 @@
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint":  [255, 85, 85]
+        "layer0.tint":  [248, 248, 242]
     },
     {
         "class": "icon_in_selection",
@@ -1458,7 +1467,7 @@
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint":  [255, 85, 85]
+        "layer0.tint":  [248, 248, 242]
     },
     {
         "class": "icon_preserve_case",
@@ -1481,7 +1490,7 @@
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
-        "layer0.tint":  [255, 85, 85]
+        "layer0.tint":  [248, 248, 242]
     },
     {
         "class": "icon_highlight",
