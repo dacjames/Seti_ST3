@@ -33,7 +33,7 @@
     // Tab element
     {
         "class": "tab_control",
-        "layer0.texture": "Seti_UI/Main/tab_mask_dracula.png",
+        "layer0.texture": "Seti_UI/Main/tab_mask_dracula_highlight.png",
         "layer0.inner_margin": [22, 4],
         "layer0.opacity": 1,
         "tint_index": 1,

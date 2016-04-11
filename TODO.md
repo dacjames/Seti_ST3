@@ -2,3 +2,5 @@
 - Ctrl+Shift+P entry is messed up
 - Buttons background color (open search to see)
 - Status Text => blue
+- Scrollbar pucks are weird.
+- Tabs on light background
