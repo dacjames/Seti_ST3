@@ -376,7 +376,7 @@
         "layer0.tint":[40, 42, 54],
         "layer0.opacity": 1,
         "layer0.inner_margin": 0,
-        "content_margin": [3,0],
+        "content_margin": [4,0],
         "blur": false
     },
     // Standard horizontal scroll puck
@@ -997,57 +997,38 @@
 //  TEXT INPUT FIELD
 //--------------------------------------------------------
 
-    // Text input field item
+        // Text input field item
     {
         "class": "text_line_control",
         "layer0.tint": [29, 31, 41], // is the same color of BG in widget file
         "layer0.opacity": 1,
-        "content_margin": [3,3,5,0] // control the search panel height , line padding also effects this
     },
     {
         "class": "text_line_control",
         "parents": [{"class": "overlay_control"}],
-        "content_margin": [10,15,10,15], // text area
-        "layer0.texture": "Seti_UI/Main/menu/input_field_border--short.png",
-        "layer0.opacity": 0,
-        "layer0.inner_margin": [-10,-1,-10,3],
-    },
-    {
-        "class": "text_line_control",
-        "settings": ["Seti_panel_nrml"],
-        "parents": [{"class": "overlay_control"}],
-        "content_margin": [5,0],
-        "layer0.texture": "Seti_UI/Main/menu/input_field_border--short.png",
-        "layer0.opacity": 0,
-        "layer0.inner_margin": 0,
+        "content_margin": [8,0,8,4], // control the search panel height , line padding also effects this
+        "layer0.tint": [29, 31, 41],
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
     },
 
 //========================================================
 //  PANEL BACKGROUNDS
 //--------------------------------------------------------
 
-    // Quick panel background
     {
         "class": "overlay_control",
-        "layer0.texture": "Seti_UI/Main/menu/overlay-bg.png",
-        "layer0.inner_margin": [20, 0, 20, 40], // the image
+        "layer0.tint": [29, 31, 41],
+        "layer0.inner_margin": [1,1],
         "layer0.opacity": 1,
-        "content_margin": [13, 25, 13, 33] // the txt
-    },
-    {
-        "class": "overlay_control",
-        "settings": ["Seti_panel_nrml"],
-        "layer0.texture": "Seti_UI/Main/menu/overlay-bg.png",
-        "layer0.inner_margin": [20, 0, 20, 40],
-        "layer0.opacity": 1,
-        "content_margin": [13, 10, 13, 33]
+        "content_margin": [0,8,0,0],
     },
     // Bottom panel background
     {
         "class": "panel_control",
         "layer0.opacity": 1,
-        "layer0.tint": [29, 31, 41],
-        "content_margin": 0
+        "layer0.tint": [16,17,18],
+        "content_margin": 0,
     },
 
 //========================================================
@@ -1118,9 +1099,7 @@
     {
         "class": "quick_panel_score_label",
         "fg": [248, 248, 242],
-        "selected_fg": [248, 248, 242],
-        "match_fg": [139, 233, 253],
-        "selected_match_fg": [139, 233, 253]
+        "selected_fg": [139, 233, 253],
     },
 
 //========================================================
